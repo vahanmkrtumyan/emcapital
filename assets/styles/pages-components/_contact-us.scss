@@ -1,0 +1,38 @@
+.contact-section {
+    padding: 100px 0;
+
+    form {
+        margin-top: 50px;
+    }
+
+    .textfield {
+        margin-top: 20px;
+    }
+
+    button {
+        margin-top: 25px;
+    }
+}
+.contact-map {
+    position: relative;
+
+    iframe {
+        display: block;
+        height: 700px;
+        width: 100%;
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(63, 61, 86, 0.4);
+        pointer-events: none;
+    }
+}
+
+

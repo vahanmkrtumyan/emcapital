@@ -1,0 +1,260 @@
+.banner {
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #5f586f url("/static/img/banner.jpg") no-repeat center;
+    background-size: cover !important;
+
+    h1 {
+        text-align: center;
+        color: #ffffff;
+
+        span {
+            display: block;
+        }
+
+        em {
+            color: #ff414a;
+            font-family: 'Philosopher', sans-serif;
+        }
+    }
+}
+
+.banner-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    margin-bottom: 45px;
+
+    p {
+        font-style: italic;
+        font-size: 16px;
+        color: #3f3d56;
+    }
+}
+
+.grey-bg {
+    background-color: #F3F3F7;
+}
+
+.up-box {
+
+    .box {
+        transform: translateY(-40%);
+        padding: 80px 50px;
+        background-color: #ffffff;
+        box-shadow: 0 15px 25px -7px rgba(0,0,0,.09), 0 -12px 10px -10px rgba(0,0,0,.04);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        >div {
+            width: 32%;
+        }
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-top: 30px;
+        }
+    }
+}
+
+.offer {
+    padding-bottom: 100px;
+    background: #F3F3F7  url("/static/img/circle-bg.png") no-repeat left top;
+}
+
+.card-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 32%;
+        background-color: #fff;
+        padding: 35px 35px 150px 35px;
+        position: relative;
+        box-shadow: 0 8px 22px -7px rgba(0,0,0,.09), 0 -10px 10px -10px rgba(0,0,0,.04);
+
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.section-with-img {
+    padding: 100px 0;
+
+    .section-title {
+        margin-bottom: 70px;
+    }
+}
+
+.section-with-img-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .left {
+        width: 38%;
+    }
+
+    .right {
+        width: 60%;
+
+        >div {
+            height: auto !important;
+        }
+    }
+
+    h2 {
+        &.secondary {
+            color: #6F69E7;
+        }
+    }
+}
+
+.benefits {
+    li {
+        padding: 20px 0;
+        position: relative;
+
+        &:after {
+            content: '';
+            width: calc(100% - 65px);
+            height: 2px;
+            background-color: #f4f4f4;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        >div {
+            position: relative;
+            padding-left: 65px;
+            transition: all .5s;
+
+            &:hover {
+                transform: translateX(30px);
+            }
+        }
+        .icon {
+            width: 32px;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            opacity: .6;
+        }
+    }
+}
+
+.subscribe {
+    padding: 120px 0;
+    background: #5f586f url("/static/img/susbscribe-bg.jpg") no-repeat center;
+    background-size: cover;
+
+    .subscribe-content {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    p {
+        color: #fff;
+    }
+}
+em {
+    color: #ff414a;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.subscribe-field {
+    position: relative;
+    margin-top: 50px;
+
+    button {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    input {
+        padding-right: 108px;
+        color: #ffffff;
+        background-color: #626075;
+        border: none;
+
+        &:focus {
+            border: none;
+        }
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #fff;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 15px;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: #fff;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 15px;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: #fff;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 15px;
+    }
+}
+
+.contact {
+    padding: 75px 0;
+
+    h2 {
+        font-size: 48px;
+        line-height: 1.5;
+        em {
+            color: #ff414a;
+            font-family: 'Philosopher', sans-serif;
+        }
+    }
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h2 {
+    em {
+        color: #ff414a;
+        font-family: 'Philosopher', sans-serif;
+    }
+    span {
+        display: block;
+    }
+}

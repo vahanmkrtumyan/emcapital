@@ -1,0 +1,53 @@
+.ReactModalPortal {
+    position: relative;
+    z-index: 10;
+}
+.ReactModal__Overlay {
+    background-color: rgba(0,0,0,.7) !important;
+}
+.ReactModal__Content {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 80px !important;
+    top: 50% !important;
+    left: 50% !important;
+    bottom: initial !important;
+    right: initial !important;
+    transform: translateX(-50%) translateY(-50%);
+
+    .close {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        border: none;
+        outline: none;
+        background: transparent;
+        opacity: .7;
+        transition: all .3s;
+        cursor: pointer;
+
+        img {
+            display: block;
+            height: 18px;
+            width: 18px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    h2 {
+        padding-bottom: 40px;
+    }
+
+    .textfield {
+        padding-bottom: 30px;
+
+    }
+
+    button {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,34 @@
+.secondary-banner {
+    background-color: #f6f6f6;
+    margin-top: 115px;
+    padding: 50px 0;
+}
+.secondary-banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.breadcrumbs {
+    display: flex;
+
+    li {
+        margin-left: 15px;
+
+        &:not(:last-child) {
+            a {
+                position: relative;
+                font-weight: 400;
+
+                &:after {
+                    content: '>';
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        a {
+            font-weight: 700;
+        }
+    }
+}
