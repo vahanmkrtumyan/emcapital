@@ -25,6 +25,10 @@ const Header = ({cls}) => {
     let [isSticky, setIsSticky] = useState(false);
     const [modalIsOpen,setIsOpen] = React.useState(false);
     const [validation,setValidation] = React.useState(false);
+
+
+    const { locale } = router.query;
+
     function openModal() {
         setIsOpen(true);
     }
@@ -75,32 +79,32 @@ const Header = ({cls}) => {
             <header className={`${openMenu ? "opened" : cls} ${isSticky && !openMenu ? "sticky" : ""}`}>
                 <div className="container">
                     <div className="header-content">
-                        <a href="/" className='logo'>
+                        <a href={`/${locale}`} className='logo'>
                             <img className='white-logo' src="../static/img/logo-white.svg" alt="EM capital"/>
                             <img className='purple-logo' src="../static/img/logo.svg" alt="EM capital"/>
                         </a>
                         <nav>
                             <button onClick={openBurger} className='burger no-style'>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                                <span />
+                                <span />
+                                <span />
+                                <span />
+                                <span />
+                                <span />
                             </button>
                             <ul className='menu'>
                                 {
                                     header.map((el, ind) => {
                                         if (contact) {
-                                            return <li key={ind}><Link href={`/#${el.href}`}><a>{el.name}</a></Link></li>
+                                            return <li key={ind}><Link href={`/${locale}/#${el.href}`}><a>{el.name}</a></Link></li>
                                         } else {
                                             return <li key={ind}><a onClick={navigate}
-                                                                    href={`#${el.href}`}>{el.name}</a></li>
+                                                                    href={`${locale}/#${el.href}`}>{el.name}</a></li>
                                         }
                                     })
                                 }
-                                <li><Link href="/contact-us"><a>Հետադարձ կապ</a></Link></li>
-                                <li><a onClick={openModal} href="#">Մուտք</a></li>
+                                <li><Link href={`/${locale}/contact-us`}><a>Հետադարձ կապ</a></Link></li>
+                                <li><a onClick={openModal}>Մուտք</a></li>
                             </ul>
                         </nav>
 

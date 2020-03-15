@@ -1,8 +1,9 @@
 import React from "react";
-import Layout from "../components/Layout";
-import animationData from "../static/json/data";
+import Layout from "../../components/Layout";
+import animationData from "../../static/json/data";
 import Lottie from "react-lottie";
 import Link from "next/link";
+import {useRouter} from "next/router";
 // import {
 //   LocalizationProvider,
 //   LocalizationContext
@@ -10,7 +11,8 @@ import Link from "next/link";
 
 const Index = () => {
   // const { t } = React.useContext(LocalizationContext);
-
+    const router = useRouter();
+    const  { locale } = router.query;
   return (
     <Layout cls="">
       <section id="home" className="banner">
@@ -36,7 +38,7 @@ const Index = () => {
               </h3>
             </div>
             <div>
-              <img src="../static/img/benifits-1.png" alt="Increasing value" />
+              <img src="../../static/img/benifits-1.png" alt="Increasing value" />
               <h3>Արժեքի մեծացում</h3>
               <p>
                 Մեր պրոֆեսիոնալ մասնագետները հոգ կտանեն ձեր միջոցների օպտիմալ
@@ -44,7 +46,7 @@ const Index = () => {
               </p>
             </div>
             <div>
-              <img src="../static/img/benifits-2.png" alt="Optimal vision" />
+              <img src="../../static/img/benifits-2.png" alt="Optimal vision" />
               <h3>Օպտիմալ տեսողություն</h3>
               <p>
                 Մենք անընդհատ հետեւում ենք շուկայում տեղի ունեցող վերջին
@@ -52,7 +54,7 @@ const Index = () => {
                 լավագույն արդյունքին։
               </p>
             </div>
-            <Link href="/contact-us">
+            <Link href={`/${locale}/contact-us`}>
               <button className="btn primary">Հետադարձ կապ</button>
             </Link>
           </div>
@@ -71,7 +73,7 @@ const Index = () => {
                 ուսումնասիրում ենք շուկան և փնտրում լավագույն տարբրակները
                 ներդրումների կատարելու համար։
               </p>
-              <img src="../static/img/undraw_folder_39kl.jpg" alt="Finances" />
+              <img src="../../static/img/undraw_folder_39kl.jpg" alt="Finances" />
             </li>
             <li className="card">
               <h3>Խորհրդատվություն</h3>
@@ -80,7 +82,7 @@ const Index = () => {
                 խորհրդավություն, տրամադրում ենք հուսալի և արդիական
                 տեղեկատվություն՝ ընդունելու ճիշտ և արդյունավետ որոշումներ։
               </p>
-              <img src="../static/img/we-offer-2-1.png" alt="Consulting" />
+              <img src="../../static/img/we-offer-2-1.png" alt="Consulting" />
             </li>
             <li className="card">
               <h3>Հուսալիություն</h3>
@@ -90,7 +92,7 @@ const Index = () => {
                 կառավարելի մակարդակ։ Ներդրումները կատարվում են՝ գնահատելով դրանց
                 հետ կապված բոլոր ռիսկերը։
               </p>
-              <img src="../static/img/insurance.jpg" alt="Insurance" />
+              <img src="../../static/img/insurance.jpg" alt="Insurance" />
             </li>
           </ul>
         </div>
@@ -108,7 +110,7 @@ const Index = () => {
                   <div>
                     <img
                       className="icon"
-                      src="../static/img/icons/search.svg"
+                      src="../../static/img/icons/search.svg"
                       alt="Transparency"
                     />
                     <div>
@@ -124,7 +126,7 @@ const Index = () => {
                   <div>
                     <img
                       className="icon"
-                      src="../static/img/icons/shield.svg"
+                      src="../../static/img/icons/shield.svg"
                       alt="Protection"
                     />
                     <div>
@@ -140,7 +142,7 @@ const Index = () => {
                   <div>
                     <img
                       className="icon"
-                      src="../static/img/icons/report.svg"
+                      src="../../static/img/icons/report.svg"
                       alt="Compliance"
                     />
                     <div>
@@ -196,7 +198,7 @@ const Index = () => {
               <em>Կապվեք </em>մեզ հետ ստանալու <br />
               լրացուցիչ տեղեկատվություն
             </h2>
-            <Link href="/contact-us">
+            <Link href={`/${locale}/contact-us`}>
               <button className="btn primary">Հետադարձ կապ</button>
             </Link>
           </div>
