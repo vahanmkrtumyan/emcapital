@@ -19,7 +19,6 @@ const Index = () => {
         <div className="banner-content">
           <div className="container">
             <h1>
-              {/*{t("Welcome to React")}*/}
               <span>
                 <em>{t('emcapital')}</em>{" "}
               </span>
@@ -31,18 +30,25 @@ const Index = () => {
       <section className="up-box grey-bg">
         <div className="container">
           <div className="box">
-            <div>
+            {/* <div>
               <h3>
-                Ապահովում ենք ձեր հարստության ավելացումը և օգնում կազմակերպել
-                ձեր ֆինանսները
+              {t('whatis')}
               </h3>
-            </div>
+            </div> */}
             <div>
               <img src="../../static/img/benifits-1.png" alt="Increasing value" />
               <h3>Արժեքի մեծացում</h3>
               <p>
-                Մեր պրոֆեսիոնալ մասնագետները հոգ կտանեն ձեր միջոցների օպտիմալ
-                տեղաբաշխանը, որը կբերի ձեր ունեցվածքի կայուն աճին։
+              {t('arzheqiMetsatsum')}
+              </p>
+            </div>
+            <div>
+              <img src="../../static/img/benifits-2.png" alt="Optimal vision" />
+              <h3>Օպտիմալ տեսողություն</h3>
+              <p>
+                Մենք անընդհատ հետեւում ենք շուկայում տեղի ունեցող վերջին
+                զարգացումներին եւ կատարում ենք կանխատեսումներ, որպեսզի հասնենք
+                լավագույն արդյունքին։
               </p>
             </div>
             <div>
