@@ -4,13 +4,13 @@ import animationData from "../../static/json/data";
 import Lottie from "react-lottie";
 import Link from "next/link";
 import {useRouter} from "next/router";
-// import {
-//   LocalizationProvider,
-//   LocalizationContext
-// } from "../components/Localization";
+import {
+  LocalizationProvider,
+  LocalizationContext
+} from "../../components/Localization";
 
 const Index = () => {
-  // const { t } = React.useContext(LocalizationContext);
+    const { t } = React.useContext(LocalizationContext);
     const router = useRouter();
     const  { locale } = router.query;
   return (
@@ -21,9 +21,9 @@ const Index = () => {
             <h1>
               {/*{t("Welcome to React")}*/}
               <span>
-                Բարձրորակ ներդրումային <em>լուծումներ</em>{" "}
+                <em>{t('emcapital')}</em>{" "}
               </span>
-              <span>և կայուն անվտանգություն</span>
+              <span>{t('fond')}</span>
             </h1>
           </div>
         </div>

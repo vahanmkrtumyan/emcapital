@@ -8,20 +8,13 @@ export const LocalizationContext = React.createContext();
 
 export const LocalizationProvider = ({ children }) => {
   const [locale, setLocale] = React.useState("hy");
-
   const router = useRouter();
 
   React.useEffect(() => {
-    if (router.asPath.includes("ru")) {
-      setLocale("ru");
-    } else if (router.asPath.includes("en")) {
-      setLocale("en");
-    } else {
-      setLocale("hy");
+    if (router && router.query && router.query.locale) {
+      setLocale(router.query.locale);
     }
-  }, [router.asPath]);
-
-  //   console.log(locale);
+  }, [router.query.locale]);
 
   const t = label => configTranslations[locale][label] || label;
 

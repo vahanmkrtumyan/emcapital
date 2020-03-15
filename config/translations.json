@@ -1,5 +1,5 @@
 {
-  "en": { "Welcome to React": "yelllooo" },
-  "hy": { "Welcome to React": "Բարև" },
-  "ru": { "Welcome to React": "Здраствуйте" }
+  "en": { "emcapital": "EM Capital", "fond": "investment fond" },
+  "hy": { "emcapital": "Է ԷՄ Կապիտալ", "fond": "ներդրումային ֆոնդ" },
+  "ru": { "emcapital": "И ЭМ Капитал", "fond": "инвестиционный фонд" }
 }
