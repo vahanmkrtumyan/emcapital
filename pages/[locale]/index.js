@@ -37,31 +37,27 @@ const Index = () => {
             </div> */}
             <div>
               <img src="../../static/img/benifits-1.png" alt="Increasing value" />
-              <h3>Արժեքի մեծացում</h3>
+              <h3>{t('specialization')}</h3>
               <p>
               {t('arzheqiMetsatsum')}
               </p>
             </div>
             <div>
               <img src="../../static/img/benifits-2.png" alt="Optimal vision" />
-              <h3>Օպտիմալ տեսողություն</h3>
+              <h3>{t('vision')}</h3>
               <p>
-                Մենք անընդհատ հետեւում ենք շուկայում տեղի ունեցող վերջին
-                զարգացումներին եւ կատարում ենք կանխատեսումներ, որպեսզի հասնենք
-                լավագույն արդյունքին։
+              {t('visionText')}
               </p>
             </div>
             <div>
               <img src="../../static/img/benifits-2.png" alt="Optimal vision" />
-              <h3>Օպտիմալ տեսողություն</h3>
+              <h3>{t('attraction')}</h3>
               <p>
-                Մենք անընդհատ հետեւում ենք շուկայում տեղի ունեցող վերջին
-                զարգացումներին եւ կատարում ենք կանխատեսումներ, որպեսզի հասնենք
-                լավագույն արդյունքին։
+              {t('attractionText')}
               </p>
             </div>
             <Link href={`/${locale}/contact-us`}>
-              <button className="btn primary">Հետադարձ կապ</button>
+              <button className="btn primary">{t('contact')}</button>
             </Link>
           </div>
         </div>
