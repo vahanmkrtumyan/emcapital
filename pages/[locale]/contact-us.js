@@ -1,11 +1,14 @@
 import React from "react";
 import Layout from '../../components/Layout';
 import Link from "next/link";
-
+import { LocalizationContext } from "../../components/Localization";
+import {useRouter} from "next/router";
 
 
 const ContactUs = () => {
-
+    const { t } = React.useContext(LocalizationContext);
+    const router = useRouter();
+    const  { locale } = router.query;
     return (
         <Layout cls={'invert-header'}>
             <section className='secondary-banner'>
@@ -14,10 +17,10 @@ const ContactUs = () => {
                         <h3>Հետադարձ կապ</h3>
                         <ul className="breadcrumbs">
                             <li>
-                                <Link href="/"><a>Գլխավոր</a></Link>
+                                <Link href={`/${locale}`}><a>Գլխավոր</a></Link>
                             </li>
                             <li>
-                                <Link href="/"><a>Հետադարձ կապ</a></Link>
+                                <Link href={`/${locale}/contact-us`}><a>Հետադարձ կապ</a></Link>
                             </li>
                         </ul>
                     </div>

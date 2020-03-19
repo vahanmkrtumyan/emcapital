@@ -30,11 +30,6 @@ const Index = () => {
       <section className="up-box grey-bg">
         <div className="container">
           <div className="box">
-            {/* <div>
-              <h3>
-              {t('whatis')}
-              </h3>
-            </div> */}
             <div>
               <img src="../../static/img/benifits-1.png" alt="Increasing value" />
               <h3>{t('specialization')}</h3>
@@ -65,15 +60,13 @@ const Index = () => {
       <section id="offers" className="offer grey-bg">
         <div className="container">
           <div className="section-title text-center">
-            <h2>Մեր առաջարկները</h2>
+            <h2>{t('specialization')}</h2>
           </div>
           <ul className="card-wrap">
             <li className="card">
-              <h3>Միջոցների տեղաբաշխում</h3>
+              <h3>{t('allocation')}</h3>
               <p>
-                Մտածելով ձեր միջոցների օպտիմալ բաշխման մասին՝ մենք անընդմեջ
-                ուսումնասիրում ենք շուկան և փնտրում լավագույն տարբրակները
-                ներդրումների կատարելու համար։
+              {t('allocationText')}
               </p>
               <img src="../../static/img/undraw_folder_39kl.jpg" alt="Finances" />
             </li>

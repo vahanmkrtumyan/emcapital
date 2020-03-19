@@ -3,17 +3,18 @@ import Link from "next/link";
 import navigateTo from "./navigateTo";
 import {useRouter} from "next/router";
 import Modal from 'react-modal';
+import { LocalizationContext } from "./Localization";
 
 let header = [
     {
         href: "home",
-        name: "Գլխավոր",
+        name: "main",
     }, {
         href: "offers",
-        name: "Առաջարկներ",
+        name: "specialization",
     }, {
         href: "news",
-        name: "Նորություններ",
+        name: "subscribe",
     },
 ];
 
@@ -26,7 +27,7 @@ const Header = ({cls}) => {
     const [modalIsOpen,setIsOpen] = React.useState(false);
     const [validation,setValidation] = React.useState(false);
 
-
+    const { t } = React.useContext(LocalizationContext);
     const { locale } = router.query;
 
     function openModal() {
@@ -96,15 +97,15 @@ const Header = ({cls}) => {
                                 {
                                     header.map((el, ind) => {
                                         if (contact) {
-                                            return <li key={ind}><Link href={`/${locale}/#${el.href}`}><a>{el.name}</a></Link></li>
+                                            return <li key={ind}><Link href={`/${locale}/#${el.href}`}><a>{t(el.name)}</a></Link></li>
                                         } else {
                                             return <li key={ind}><a onClick={navigate}
-                                                                    href={`${locale}/#${el.href}`}>{el.name}</a></li>
+                                                                    href={`${locale}/#${el.href}`}>{t(el.name)}</a></li>
                                         }
                                     })
                                 }
-                                <li><Link href={`/${locale}/contact-us`}><a>Հետադարձ կապ</a></Link></li>
-                                <li><a onClick={openModal}>Մուտք</a></li>
+                                <li><Link href={`/${locale}/contact-us`}><a>{t('contact')}</a></Link></li>
+                                <li><a onClick={openModal}>{t('login')}</a></li>
                             </ul>
                         </nav>
 
@@ -137,7 +138,8 @@ const Header = ({cls}) => {
                 </Modal>
 
             </header>
-            <a onClick={navigate} href="#banner" className={`scroll-to-top ${isSticky ? "show" : ""}`}>
+            <a onClick={() => window.scrollTo({top: 0, behavior: "smooth"})} 
+                href="#banner" className={`scroll-to-top ${isSticky ? "show" : ""}`}>
                 <img src="../static/img/icons/up-arrow.svg" alt="scroll top"/>
             </a>
         </>
