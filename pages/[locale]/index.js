@@ -4,10 +4,7 @@ import animationData from "../../static/json/data";
 import Lottie from "react-lottie";
 import Link from "next/link";
 import {useRouter} from "next/router";
-import {
-  LocalizationProvider,
-  LocalizationContext
-} from "../../components/Localization";
+import {LocalizationContext} from "../../components/Localization";
 
 const Index = () => {
     const { t } = React.useContext(LocalizationContext);
@@ -71,21 +68,16 @@ const Index = () => {
               <img src="../../static/img/undraw_folder_39kl.jpg" alt="Finances" />
             </li>
             <li className="card">
-              <h3>Խորհրդատվություն</h3>
+              <h3>{t('instruments')}</h3>
               <p>
-                Մեր գործընկերներին մենք տրմադրում ենք բարձրակարգ
-                խորհրդավություն, տրամադրում ենք հուսալի և արդիական
-                տեղեկատվություն՝ ընդունելու ճիշտ և արդյունավետ որոշումներ։
+              {t('instrumentsText')}
               </p>
               <img src="../../static/img/we-offer-2-1.png" alt="Consulting" />
             </li>
             <li className="card">
-              <h3>Հուսալիություն</h3>
+              <h3>{t('reliable')}</h3>
               <p>
-                Մեր առաջարկած լուծումները հետապնդում են ոչ միայն բարձր
-                եկամտաբերության ապահովում,այլ նաև հուսալիություն, ռիսկի
-                կառավարելի մակարդակ։ Ներդրումները կատարվում են՝ գնահատելով դրանց
-                հետ կապված բոլոր ռիսկերը։
+              {t('reliableText')}
               </p>
               <img src="../../static/img/insurance.jpg" alt="Insurance" />
             </li>
@@ -97,8 +89,7 @@ const Index = () => {
           <div className="section-with-img-content">
             <div className="left">
               <div className="section-title">
-                <h2>Ուղղված է ապահովելու</h2>
-                <h2 className="secondary">Ամբողջական համագործակցություն</h2>
+                <h2 className="secondary">{t('priorities')}</h2>
               </div>
               <ul className="benefits">
                 <li>
@@ -109,10 +100,9 @@ const Index = () => {
                       alt="Transparency"
                     />
                     <div>
-                      <h4>Թափանցիկություն</h4>
+                      <h4>{t('transparency')}</h4>
                       <p>
-                        Մեր գործունեության մեջ մենք ապահովում ենք
-                        թափանցիկությունը և հուսալիությունը
+                      {t('transparencyТехт')}
                       </p>
                     </div>
                   </div>
@@ -125,10 +115,9 @@ const Index = () => {
                       alt="Protection"
                     />
                     <div>
-                      <h4>Պաշտպանություն</h4>
+                      <h4>{t('protection')}</h4>
                       <p>
-                        Մենք հոգ ենք տանում ձեր ներդումների պաշտպանվածության
-                        մասին՝ ձեռնարկելով դրա համա անհրաժեշտ քայլերը
+                      {t('protectionText')}
                       </p>
                     </div>
                   </div>
@@ -141,11 +130,9 @@ const Index = () => {
                       alt="Compliance"
                     />
                     <div>
-                      <h4>Համապատասխանություն</h4>
+                      <h4>{t('compliance')}</h4>
                       <p>
-                        Մեր գործըթացները համապատասխանում են ոլորտի բարձրագույն
-                        ստանդարտներին՝ ապահովելով որակ և որոշումների ընդունման
-                        արդյունավետություն
+                      {t('complianceТехт')}
                       </p>
                     </div>
                   </div>
@@ -172,16 +159,14 @@ const Index = () => {
         <div className="container">
           <div className="subscribe-content">
             <h2 className="text-center">
-              Բաժանորդագրվեք մեր <em>տեղեկագրին</em>
+            {t('subscribeto')} <em>{t('newslatter')}</em>
             </h2>
             <p className="text-center">
-              Դուք կստանաք ամենաթարմ տեղեկատվությունը մեր ծրագրերի,
-              ներդրումների, գործընկերների և այլ կարևոր տեղեկատվության
-              վերաբերյալ:
+            {t('newslatterText')}
             </p>
             <div className="subscribe-field textfield">
-              <input type="text" placeholder="Էլ․ հասցե" />
-              <button className="btn secondary">Ուղարկել</button>
+              <input type="text" placeholder={t('email')} />
+              <button className="btn secondary">{t('send')}</button>
             </div>
           </div>
         </div>
@@ -190,11 +175,11 @@ const Index = () => {
         <div className="container">
           <div className="contact-content">
             <h2>
-              <em>Կապվեք </em>մեզ հետ ստանալու <br />
-              լրացուցիչ տեղեկատվություն
+              <em>{t('contacte')} </em>{t('contactText1')}<br />
+              {t('contactText')}
             </h2>
             <Link href={`/${locale}/contact-us`}>
-              <button className="btn primary">Հետադարձ կապ</button>
+              <button className="btn primary">{t('contact')}</button>
             </Link>
           </div>
         </div>

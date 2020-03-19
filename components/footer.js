@@ -1,6 +1,8 @@
 import React from 'react';
+import { LocalizationContext } from "./Localization";
 
 const Footer = () => {
+    const { t } = React.useContext(LocalizationContext);
     return (
         <footer >
             <div className="container">
@@ -9,13 +11,11 @@ const Footer = () => {
                         <a href="/" className='logo'>
                             <img src="../static/img/logo-white.svg" alt="EM capital"/>
                         </a>
-                        Մենք ամբիցիոզ թիմ ենք, որը գիտի
-                        ինչպես ապահովել լավագույն արդյունք։
-                        Մենք կատարում ենք մեր աշխատանքը լավագույն կերպով։
+                        {t('footerText')}
                     </div>
                     <ul className='footer-list'>
-                        <li>Մեր մասին</li>
-                        <li>Տերյան 69, Երևան</li>
+                        <li>{t('about')}</li>
+                        <li>{t('address')}</li>
                         <li>+374 10515151</li>
                         <li>emailaddress@company.com</li>
                         <li>9:00-18:00</li>
