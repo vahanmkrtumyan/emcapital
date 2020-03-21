@@ -205,6 +205,17 @@
                 padding: 20px 0;
                 display: inline-block;
             }
+
+            &.locale-container, &.local-container-open {
+                width: auto;
+                position: static;
+
+                ul {
+                     li {
+                         border-bottom: none;
+                     }
+                }
+            }
         }
     }
     .secondary-banner {

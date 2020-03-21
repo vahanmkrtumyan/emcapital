@@ -19,7 +19,7 @@ export const LocalizationProvider = ({ children }) => {
   const t = label => configTranslations[locale][label] || label;
 
   return (
-    <LocalizationContext.Provider value={{ locale, t }}>
+    <LocalizationContext.Provider value={{ locale, setLocale, t }}>
       {children}
     </LocalizationContext.Provider>
   );
