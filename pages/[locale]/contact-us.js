@@ -14,13 +14,13 @@ const ContactUs = () => {
             <section className='secondary-banner'>
                 <div className="container">
                     <div className="secondary-banner-content">
-                        <h3>Հետադարձ կապ</h3>
+                        <h3>{t('contact')}</h3>
                         <ul className="breadcrumbs">
                             <li>
-                                <Link href={`/${locale}`}><a>Գլխավոր</a></Link>
+                                <Link href={`/${locale}`}><a>{t('main')}</a></Link>
                             </li>
                             <li>
-                                <Link href={`/${locale}/contact-us`}><a>Հետադարձ կապ</a></Link>
+                                <Link href={`/${locale}/contact-us`}><a>{t('contact')}</a></Link>
                             </li>
                         </ul>
                     </div>
@@ -29,27 +29,27 @@ const ContactUs = () => {
             </section>
             <section className='contact-section'>
                 <div className="container-sm">
-                    <h1 className='secondary text-center'>Ինչպես  կարող ենք<br/> ձեզ <em>օգնել</em></h1>
+                    <h1 className='secondary text-center'>{t('how')}<br/> <em>{t('help')}</em> {t('you')}</h1>
                     <form>
                         <div className='child-half'>
                             <div className='textfield'>
-                                <label htmlFor="name">Անուն</label>
+                                <label htmlFor="name">{t('name')}</label>
                                 <input id='name' type="text"/>
                             </div>
                             <div className='textfield'>
-                                <label htmlFor="surname">Ազգանուն</label>
+                                <label htmlFor="surname">{t('surname')}</label>
                                 <input id='surname' type="text"/>
                             </div>
                         </div>
                         <div className='textfield'>
-                            <label htmlFor="email">Էլ․ հասցե</label>
+                            <label htmlFor="email">{t('email')}</label>
                             <input id='email' type="email"/>
                         </div>
                         <div className='textfield'>
-                            <label htmlFor="message">Հաղորդագրություն</label>
+                            <label htmlFor="message">{t('message')}</label>
                             <textarea id='message'></textarea>
                         </div>
-                        <button className='btn primary'>Ուղարկել</button>
+                        <button className='btn primary'>{t('send')}</button>
                     </form>
                 </div>
 

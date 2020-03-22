@@ -29,7 +29,7 @@ const Index = () => {
           <div className="box">
             <div>
               <img src="../../static/img/benifits-1.png" alt="Increasing value" />
-              <h3>{t('specialization')}</h3>
+              <h3>{t('professionalism')}</h3>
               <p>
               {t('arzheqiMetsatsum')}
               </p>

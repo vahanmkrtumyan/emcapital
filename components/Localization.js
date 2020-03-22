@@ -7,7 +7,7 @@ const configTranslations = require("../config/translations");
 export const LocalizationContext = React.createContext();
 
 export const LocalizationProvider = ({ children }) => {
-  const [locale, setLocale] = React.useState("hy");
+  const [locale, setLocale] = React.useState("ru");
   const router = useRouter();
 
   React.useEffect(() => {
@@ -26,7 +26,6 @@ export const LocalizationProvider = ({ children }) => {
 };
 
 LocalizationProvider.getInitialProps = ({ query }) => {
-  console.log({ query });
   return { query };
 };
 LocalizationProvider.propTypes = {

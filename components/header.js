@@ -81,7 +81,7 @@ const Header = ({cls}) => {
             setLocale(value)
         }
     }
-console.log(changeLocale);
+
     return (
         <>
             <header className={`${openMenu ? "opened" : cls} ${isSticky && !openMenu ? "sticky" : ""}`}>
@@ -113,7 +113,7 @@ console.log(changeLocale);
                                     })
                                 }
                                 <li><Link href={`/${changeLocale}/contact-us`}><a>{t('contact')}</a></Link></li>
-                                <li><a onClick={openModal}>{t('login')}</a></li>
+                                <li style={{cursor: "pointer"}}><a onClick={openModal}>{t('login')}</a></li>
                                 <li onClick={() => setToggle(!toggle)}
                                      className={`locale-container ${toggle  ? "locale-container-open" : ""}`}>
                                     <ul>
@@ -140,20 +140,20 @@ console.log(changeLocale);
                     ariaHideApp={false}
                 >
                     <div>
-                        <h2 className='text-center'>Մուտք գործել</h2>
+                        <h2 className='text-center'>{t("signIn")}</h2>
                         <button className='close' onClick={closeModal}><img src="/static/img/icons/close.svg" alt=""/>
                         </button>
                         <form>
                             <div className={`${validation ? 'error' : ''} textfield`}>
-                                <label htmlFor="surname">Էլ․ հասցե</label>
+                                <label htmlFor="surname">{t("emailUp")}</label>
                                 <input id='surname' type="text"/>
                             </div>
                             <div className={`${validation ? 'error' : ''} textfield`}>
-                                <label htmlFor="email">Գաղտնաբառ</label>
+                                <label htmlFor="email">{t("password")}</label>
                                 <input id='email' type="email"/>
-                                {validation && <p className='error-msg'>սխալ Էլ․ հասցե կամ գաղտնաբառ</p>}
+                                {validation && <p className='error-msg'>{t("wrong")}</p>}
                             </div>
-                            <button onClick={signInUser} className='btn primary'>Մուտք</button>
+                            <button onClick={signInUser} className='btn primary'>{t("signInButton")}</button>
                         </form>
                     </div>
 
