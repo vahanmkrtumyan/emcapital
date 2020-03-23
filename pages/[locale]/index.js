@@ -42,7 +42,7 @@ const Index = () => {
               </p>
             </div>
             <div>
-              <img src="../../static/img/benifits-2.png" alt="Optimal vision" />
+              <img src="../../static/img/benifits-3.png" alt="Optimal vision" />
               <h3>{t('attraction')}</h3>
               <p>
               {t('attractionText')}

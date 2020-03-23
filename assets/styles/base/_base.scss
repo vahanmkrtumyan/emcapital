@@ -152,6 +152,27 @@ h1,h2,h3 {
             color: #ff414a;
         }
     }
+
+    &.success {
+        position: relative;
+        .success-msg {
+            transition: all .3s;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: 14px;
+            margin-top: 5px;
+            color: #21B632;
+            animation: success .5s ease-in 3s forwards;
+        }
+    }
+}
+
+@keyframes success {
+    to {
+        opacity: 0;
+    }
+
 }
 
 /*alignment*/

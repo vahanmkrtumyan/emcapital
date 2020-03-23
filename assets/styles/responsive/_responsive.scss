@@ -205,16 +205,27 @@
                 padding: 20px 0;
                 display: inline-block;
             }
-
-            &.locale-container, &.local-container-open {
-                width: auto;
-                position: static;
+            &.locale-container {
+                height: 32px;
 
                 ul {
-                     li {
-                         border-bottom: none;
-                     }
+                    li {
+                        border-bottom: none;
+
+                        img {
+                            width: 30px;
+                        }
+                    }
                 }
+            }
+
+            &.locale-container-open {
+                height: 92px;
+            }
+
+            &.locale-container, &.locale-container-open {
+                width: auto;
+                position: static;
             }
         }
     }
