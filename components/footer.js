@@ -17,7 +17,7 @@ const Footer = () => {
                         <li>{t('about')}</li>
                         <li>{t('address')}</li>
                         <li>+374 10515151</li>
-                        <li>emailaddress@company.com</li>
+                        <li>emcapitalfund@gmail.com</li>
                         <li>9:00-18:00</li>
                     </ul>
                 </div>
