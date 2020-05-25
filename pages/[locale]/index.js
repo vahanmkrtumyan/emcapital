@@ -88,10 +88,10 @@ const Index = () => {
                 <div className="container">
                     <div className="about-content">
                         <h2 className="text-center">
-                            About <em>Fund</em>
+                        {t('about')} <em>{t('fund')}</em>
                         </h2>
                         <p className="text-center">
-                            The fund pursues the main goal of making an attractive income by investing in the markets of the CIS and Eastern European Emerging Markets, mainly in equity and debt instruments. The Fund invests in companies or other investment funds in Armenia or other developing countries by providing loans and / or financing individual projects and supplies, delivery or employment contracts, and financing the trade.
+                        {t('aboutText')}
                         </p>
                     </div>
                 </div>

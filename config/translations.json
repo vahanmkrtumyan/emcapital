@@ -48,7 +48,10 @@
         "you": "you",
         "name": "Name",
         "surname": "Surname",
-        "message": "Message"
+        "message": "Message",
+        "about1": "About",
+        "fund": "Fund",
+        "aboutText": "The fund pursues the main goal of making an attractive income by investing in the markets of the CIS and Eastern European Emerging Markets, mainly in equity and debt instruments. The Fund invests in companies or other investment funds in Armenia or other developing countries by providing loans and / or financing individual projects and supplies, delivery or employment contracts, and financing the trade."
     },
     "hy": {
         "emcapital": "Ի ԷՄ Կապիտալ",
@@ -99,7 +102,10 @@
         "you": "ձեզ",
         "name": "Անուն",
         "surname": "Ազգանուն",
-        "message": "Հաղորդագրություն"
+        "message": "Հաղորդագրություն",
+        "about1": "Ֆոնդի",
+        "fund": "մասին",
+        "aboutText": "Ֆոնդը հետապնդում է գրավիչ եկամուտ ստանալու հիմնական նպատակ՝ ներդրումներ կատարելով ԱՊՀ և Արևելյան Եվրոպայի զարգացող (Emerging Markets) երկրների շուկաներում հիմնականում բաժնետիրական և պարտքային գործիքներում: Ֆոնդը ներդրում է կատարում Հայաստանի կամ այլ զարգացող երկրների ընկերությունների և կամ այլ ներդրումային ֆոնդերի մեջ բաժնեմասնակցության ձեռքբերմամբ, փոխառությունների տրամադրմամբ և/կամ առանձին ծրագրերի և/կամ մատակարարման, առաքման կամ աշխատանքների պայմանագրերի ֆինանսավորման, առևտրի ֆինանսավորման միջոցով:"
     },
     "ru": {
         "emcapital": "И ЭМ Капитал",
@@ -150,6 +156,9 @@
         "you": "вам",
         "name": "Имя",
         "surname": "Фамилия",
-        "message": "Сообщение"
+        "message": "Сообщение",
+        "about1": "О",
+        "fund": "Фонде",
+        "aboutText": "Фонд преследует основную цель получения привлекательного дохода путем инвестирования в рынки развивающихся стран СНГ и Восточной Европы, главным образом в долевые и долговые инструменты. Фонд инвестирует в компании или другие инвестиционные фонды в Армении или других развивающихся странах через предоставления займов и / или финансируя отдельные проекты и поставки, контракты на поставку или трудоустройство, а также финансированием торговли."
     }
 }
