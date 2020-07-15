@@ -22,7 +22,7 @@ const _languages = ["hy", "ru", "en"];
 const Header = ({cls}) => {
 
     const router = useRouter();
-    let [contact, setContact] = useState(false);
+    let [subPage, setSubPage] = useState(false);
     const [openMenu, setOpenMenu] = useState(false);
     let [isSticky, setIsSticky] = useState(false);
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -62,10 +62,10 @@ const Header = ({cls}) => {
     }, []);
 
     useEffect(() => {
-        if (router.asPath.includes("contact")) {
-            setContact(true)
+        if (router.asPath.includes("contact") || router.asPath.includes("settings")) {
+            setSubPage(true)
         } else {
-            setContact(false)
+            setSubPage(false)
         }
     }, [router]);
 
@@ -103,7 +103,7 @@ const Header = ({cls}) => {
                             <ul className='menu'>
                                 {
                                     header.map((el, ind) => {
-                                        if (contact) {
+                                        if (subPage) {
                                             return <li key={ind}><Link
                                                 href={`/${changeLocale}/#${el.href}`}><a>{t(el.name)}</a></Link></li>
                                         } else {
@@ -113,6 +113,7 @@ const Header = ({cls}) => {
                                     })
                                 }
                                 <li><Link href={`/${changeLocale}/contact-us`}><a>{t('contact')}</a></Link></li>
+                                <li><Link href={`/${changeLocale}/settings`}><a>{t('settings')}</a></Link></li>
                                 <li style={{cursor: "pointer"}}><a onClick={openModal}>{t('login')}</a></li>
                                 <li onClick={() => setToggle(!toggle)}
                                      className={`locale-container ${toggle  ? "locale-container-open" : ""}`}>

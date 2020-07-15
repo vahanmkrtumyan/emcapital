@@ -20,8 +20,8 @@
         display: block;
         height: 700px;
         width: 100%;
-        -webkit-filter: invert(1);
-        filter: invert(1);
+        -webkit-filter: contrast(1.5);
+        filter: contrast(1.5);
     }
     &:after {
         content: '';
@@ -30,7 +30,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        background-color: rgba(63, 61, 86, 0.4);
+        background-color: rgba(48, 65, 110, 0.4);
         pointer-events: none;
     }
 }

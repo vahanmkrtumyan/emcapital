@@ -90,7 +90,7 @@ const ContactUs = () => {
 
             </section>
             <section className='contact-map'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.021526642514!2d44.51623891564395!3d40.186334377542835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abce19fef5f71%3A0x307635d599d60cc!2s69%20Teryan%20St%2C%20Yerevan%200009%2C%20Armenia!5e0!3m2!1sen!2s!4v1583694385237!5m2!1sen!2s" frameBorder="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1358.5561141146547!2d44.50397028659777!3d40.17528674912449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgrigor%20lusavorich%2069!5e1!3m2!1sru!2s!4v1594729756505!5m2!1sru!2s" frameBorder="0"></iframe>
             </section>
         </Layout>
     );

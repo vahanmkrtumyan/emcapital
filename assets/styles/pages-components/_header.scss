@@ -41,7 +41,7 @@ header {
     }
     .burger {
         span {
-            background: #6F69E7;
+            background: #637dff;
         }
     }
 }
@@ -75,7 +75,7 @@ header {
     }
     .burger {
         span {
-            background: #6F69E7;
+            background: #637dff;
         }
     }
 }
@@ -85,17 +85,18 @@ header {
     position: relative;
     li {
         a {
-            font-weight: 700;
+            font-weight: 500;
             color: #fff;
             transition: all .3s;
+            font-size: 14px;
 
             &:hover {
-                color: #ff414a;
+                color: #fa2a34;
             }
         }
 
         &:not(:last-child) {
-            margin-right: 35px;
+            margin-right: 18px;
         }
     }
 }

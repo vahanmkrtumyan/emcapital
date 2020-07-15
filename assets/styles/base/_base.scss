@@ -58,7 +58,7 @@ h4 {
 }
 
 h1,h2,h3 {
-    color: #3f3d56;
+    color: #30416e;
     line-height: normal;
 }
 
@@ -76,20 +76,20 @@ h1,h2,h3 {
     transition: all .3s;
 
     &.primary {
-        background-color: #ff414a;
+        background-color: #fa2a34;
         color: #ffffff;
 
         &:hover {
-            background-color: darken(#ff414a, 5%);
+            background-color: darken(#fa2a34, 5%);
         }
     }
 
     &.secondary {
         background-color: #ffffff;
-        color: #3f3d56;
+        color: #30416e;
 
         &:hover {
-            background-color: #ff414a;
+            background-color: #fa2a34;
             color: #ffffff;
         }
     }
@@ -106,7 +106,7 @@ h1,h2,h3 {
         display: block;
         margin-bottom: 5px;
         font-weight: 600;
-        color: #3f3d56;
+        color: #30416e;
     }
     input, textarea {
         width: 100%;
@@ -136,10 +136,10 @@ h1,h2,h3 {
     &.error {
         position: relative;
         input, textarea {
-            border: 1px solid #ff414a;
+            border: 1px solid #fa2a34;
 
             &:focus {
-                border: 1px solid #ff414a;
+                border: 1px solid #fa2a34;
             }
         }
         .error-msg {
@@ -149,7 +149,7 @@ h1,h2,h3 {
             bottom: 0;
             font-size: 14px;
             margin-top: 5px;
-            color: #ff414a;
+            color: #fa2a34;
         }
     }
 
@@ -218,7 +218,7 @@ h1,h2,h3 {
     }
 
     &:hover {
-        background: #ff414a;
+        background: #fa2a34;
     }
 
 

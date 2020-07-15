@@ -2,7 +2,7 @@
     height: 100vh;
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #5f586f url("https://www.saveatrain.com/blog/wp-content/uploads/2019/08/Iconic-Churches-and-Monasteries-in-Europe-2.jpg") no-repeat center;
+    background: #30416e url("/static/img/banner1.jpg") no-repeat center;
     background-size: cover !important;
 
     h1 {
@@ -14,9 +14,18 @@
         }
 
         em {
-            color: #ff414a;
-            font-family: 'Philosopher', sans-serif;
+            color: #fa2a34;
         }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(48, 65, 110, 0.9);
     }
 }
 
@@ -24,6 +33,8 @@
     height: 100%;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .section-title {
@@ -32,7 +43,7 @@
     p {
         font-style: italic;
         font-size: 16px;
-        color: #3f3d56;
+        color: #30416e;
     }
 }
 
@@ -125,7 +136,7 @@
 
     h2 {
         &.secondary {
-            color: #6F69E7;
+            color: #637dff;
         }
     }
 }
@@ -170,7 +181,7 @@
     background-size: cover;
 
     &.subscribe {
-        background: #5f586f url("/static/img/susbscribe-bg.jpg") no-repeat center;
+        background: #32426f url("/static/img/susbscribe-bg.png") no-repeat center;
     }
 
     .subscribe-content {
@@ -187,8 +198,7 @@
     }
 }
 em {
-    color: #ff414a;
-    font-family: 'Philosopher', sans-serif;
+    color: #fa2a34;
 }
 
 .subscribe-field {
@@ -204,7 +214,7 @@ em {
     input {
         padding-right: 108px;
         color: #ffffff;
-        background-color: #626075;
+        background-color: rgba(48, 65, 110, .7);
         border: none;
 
         &:focus {
@@ -233,7 +243,8 @@ em {
 }
 
 .about-fund {
-    background: #5f586f url("/static/img/fund-bg.jpg") no-repeat center;
+    background: #32426f url("/static/img/fund-bg.png") no-repeat center;
+
 
     p {
         font-size: 16px;
@@ -252,8 +263,7 @@ em {
         font-size: 48px;
         line-height: 1.5;
         em {
-            color: #ff414a;
-            font-family: 'Philosopher', sans-serif;
+            color: #fa2a34;
         }
     }
 }
@@ -267,8 +277,7 @@ em {
 
 h2 {
     em {
-        color: #ff414a;
-        font-family: 'Philosopher', sans-serif;
+        color: #fa2a34;
     }
     span {
         display: block;

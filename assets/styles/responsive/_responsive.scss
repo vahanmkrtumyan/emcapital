@@ -133,7 +133,7 @@
             right: 0;
             top: 0;
             height: 0;
-            background-color: #3f3d56;
+            background-color: #30416e;
             transition: all .5s;
             opacity: 0;
             z-index: -1;
@@ -258,5 +258,9 @@
 
     .ReactModal__Content {
         padding: 25px !important;
+    }
+
+    .settings-section {
+        padding: 40px 0;
     }
 }
