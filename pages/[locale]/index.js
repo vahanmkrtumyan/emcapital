@@ -65,7 +65,7 @@ const Index = () => {
                             <p>
                                 {t('allocationText')}
                             </p>
-                            <img src="../../static/img/undraw_folder_39kl.jpg" alt="Finances" />
+                            <img src="../../static/img/undraw_folder_39kl.png" alt="Finances" />
                         </li>
                         <li className="card">
                             <h3>{t('instruments')}</h3>
@@ -79,7 +79,7 @@ const Index = () => {
                             <p>
                                 {t('reliableText')}
                             </p>
-                            <img src="../../static/img/insurance.jpg" alt="Insurance" />
+                            <img src="../../static/img/insurance.png" alt="Insurance" />
                         </li>
                     </ul>
                 </div>
