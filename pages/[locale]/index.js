@@ -54,6 +54,7 @@ const Index = () => {
                     </div>
                 </div>
             </section>
+
             <section id="offers" className="offer grey-bg">
                 <div className="container">
                     <div className="section-title text-center">
@@ -88,10 +89,10 @@ const Index = () => {
                 <div className="container">
                     <div className="about-content">
                         <h2 className="text-center">
-                        {t('about1')} <em>{t('fund')}</em>
+                            {t('about1')} <em>{t('fund')}</em>
                         </h2>
                         <p className="text-center">
-                        {t('aboutText')}
+                            {t('aboutText')}
                         </p>
                     </div>
                 </div>
@@ -165,6 +166,12 @@ const Index = () => {
                             />
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className='investment'>
+                <h2 className='text-center'>Հայաստանի ներդրումային <em>գրավչությունը</em></h2>
+                <div className="investment-content">
+                    <p className='text-center'>Մենք վստահում ենք Հայաստանի տնտեսության առաջընթացին, քանի որ Հայաստանն ունի պոտենցիալ եւ այդ պոտենցիալն իր բնակչության մեջ է, որն ունի հզոր միտք, և դա հայտնի է նաև երկրի սահմաններից դուրս։ Մասնավորապես Չինաստանը Հայաստանում «Խելացի քաղաք» կկառուցի: Հայաստանի վերակառուցման և զարգացման ԱԴԿԱՌՍ գործակալության և Չինաստանի կառավարության համատեղ նախաձեռնությամբ առաջիկայում   Հայաստանում կյանքի կկոչվի «Խելացի քաղաք» նախագիծը: Այս նպատակով Չինաստանը պատրաստվում է շուրջ 15 միլիարդ դոլարի ներդրումներ անել՝ առաջիկա 10-15 տարում այս քաղաքը կառուցելու համար: Կանխատեսվում է, որ Հայաստանը հանդիսանալու է մոտակա ապագայի ԱՊՀ երկրների մեջ տնտեսական աՃի տեմպով առաջատար երկիրը։</p>
                 </div>
             </section>
             <section id="news" className="subscribe">

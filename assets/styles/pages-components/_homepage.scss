@@ -25,7 +25,7 @@
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(48, 65, 110, 0.9);
+        background-color: rgba(48, 65, 110, 0.4);
     }
 }
 
@@ -55,7 +55,7 @@
 
     .box {
         transform: translateY(-40%);
-        padding: 80px 50px;
+        padding: 40px 50px;
         background-color: #ffffff;
         box-shadow: 0 15px 25px -7px rgba(0,0,0,.09), 0 -12px 10px -10px rgba(0,0,0,.04);
         display: flex;
@@ -252,6 +252,31 @@ em {
 
     .about-content {
         max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.investment {
+
+    background:  url("/static/img/circle-bg.png") no-repeat left bottom, url("/static/img/circle-bg.png") no-repeat right top;
+    padding:  100px 0;
+    background-color: #F3F3F7;
+
+    h2 {
+        max-width: 620px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    p {
+        color: #121212;
+    }
+
+    .investment-content {
+        background-color: #fff;
+        padding: 60px 70px;
+        position: relative;
+        box-shadow: 0 15px 25px -7px rgba(0, 0, 0, 0.09), 0 -12px 10px -10px rgba(0, 0, 0, 0.04);
+        max-width: 800px;
         margin: 0 auto;
     }
 }
