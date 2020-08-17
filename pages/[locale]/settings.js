@@ -1,61 +1,294 @@
-import React, {useReducer, useState} from "react";
-import Layout from '../../components/Layout';
+import React, { useReducer, useState } from "react";
+import Layout from "../../components/Layout";
 import Link from "next/link";
 import { LocalizationContext } from "../../components/Localization";
-import {useRouter} from "next/router";
-
+import { useRouter } from "next/router";
 
 const Settings = () => {
-
-
-
   const { t } = React.useContext(LocalizationContext);
   const router = useRouter();
-  const  { locale } = router.query;
+  const { locale } = router.query;
   return (
-      <Layout cls={'invert-header'}>
-        <section className='secondary-banner'>
-          <div className="container">
-            <div className="secondary-banner-content">
-              <h3>{t('settings')}</h3>
-              <ul className="breadcrumbs">
-                <li>
-                  <Link href={`/${locale}`}><a>{t('main')}</a></Link>
-                </li>
-                <li>
-                  <Link href={`/${locale}/settings`}><a>{t('settings')}</a></Link>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </section>
-        <section className='settings-section'>
-          <div className="container">
-            <h3>Կանոններ</h3>
-            <ul>
+    <Layout cls={"invert-header"}>
+      <section className="secondary-banner">
+        <div className="container">
+          <div className="secondary-banner-content">
+            <h3>{t("settings")}</h3>
+            <ul className="breadcrumbs">
               <li>
-                <a href="#">ՀՀ օրենքը Արժեթղթերի շուկայի մասին</a>
+                <Link href={`/${locale}`}>
+                  <a>{t("main")}</a>
+                </Link>
               </li>
               <li>
-                <a href="#">ՀՀ օրենքը Արժեթղթերի շուկայի մասին</a>
-              </li>
-              <li>
-                <a href="#">ՀՀ օրենքը Արժեթղթերի շուկայի մասին</a>
-              </li>
-              <li>
-                <a href="#">ՀՀ օրենքը Արժեթղթերի շուկայի մասին</a>
-              </li>
-              <li>
-                <a href="#">ՀՀ օրենքը Արժեթղթերի շուկայի մասին</a>
-              </li>
-              <li>
-                <a href="#">ՀՀ օրենքը Արժեթղթերի շուկայի մասին</a>
+                <Link href={`/${locale}/settings`}>
+                  <a>{t("settings")}</a>
+                </Link>
               </li>
             </ul>
           </div>
-        </section>
-      </Layout>
+        </div>
+      </section>
+      <section className="settings-section">
+        <div className="container">
+          <h3>{t("kanonner")}</h3>
+          <h4>{t("orenqner")}</h4>
+          <ul>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=80072"
+                target="_blank"
+              >
+                {t("orenq1")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=80085"
+                target="_blank"
+              >
+                {t("orenq2")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=64633"
+                target="_blank"
+              >
+                {t("orenq3")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=80071"
+                target="_blank"
+              >
+                {t("orenq4")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=80072"
+                target="_blank"
+              >
+                {t("orenq5")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=75485"
+                target="_blank"
+              >
+                {t("orenq6")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://lexbox.am/uploads/PDF/Ayl/Arjutayin_kargavorman.pdf"
+                target="_blank"
+              >
+                {t("orenq7")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=75280"
+                target="_blank"
+              >
+                {t("orenq8")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=21492"
+                target="_blank"
+              >
+                {t("orenq9")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=64647"
+                target="_blank"
+              >
+                {t("orenq10")}
+              </a>
+            </li>
+          </ul>
+          <h4 style={{ marginTop: "30px" }}>{t("kanonakarger")}</h4>
+          <ul>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=77936"
+                target="_blank"
+              >
+                {t("kanon1")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=77936"
+                target="_blank"
+              >
+                {t("kanon2")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=65586"
+                target="_blank"
+              >
+                {t("kanon3")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=65586"
+                target="_blank"
+              >
+                {t("kanon4")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=83968"
+                target="_blank"
+              >
+                {t("kanon5")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=83968"
+                target="_blank"
+              >
+                {t("kanon6")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=83995"
+                target="_blank"
+              >
+                {t("kanon7")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=83995"
+                target="_blank"
+              >
+                {t("kanon8")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=73610"
+                target="_blank"
+              >
+                {t("kanon9")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=73610"
+                target="_blank"
+              >
+                {t("kanon10")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=81790"
+                target="_blank"
+              >
+                {t("kanon11")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=81790"
+                target="_blank"
+              >
+                {t("kanon12")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=73612"
+                target="_blank"
+              >
+                {t("kanon13")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=73612"
+                target="_blank"
+              >
+                {t("kanon14")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=69257"
+                target="_blank"
+              >
+                {t("kanon15")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=69257"
+                target="_blank"
+              >
+                {t("kanon16")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=73804"
+                target="_blank"
+              >
+                {t("kanon17")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=73804"
+                target="_blank"
+              >
+                {t("kanon18")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=79619"
+                target="_blank"
+              >
+                {t("kanon19")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.arlis.am/DocumentView.aspx?DocID=79619"
+                target="_blank"
+              >
+                {t("kanon20")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.arlis.am/DocumentView.aspx?DocID=110106"
+                target="_blank"
+              >
+                {t("kanon21")}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </Layout>
   );
 };
 
